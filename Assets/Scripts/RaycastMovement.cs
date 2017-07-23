@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class RaycastMovement : MonoBehaviour
 {
-    private PhysicsRaycaster raycastHolder;
+    private GvrPointerPhysicsRaycaster raycastHolder;
     private GameObject player;
     public GameObject raycastIndicator;
 
@@ -18,7 +18,7 @@ public class RaycastMovement : MonoBehaviour
 
     void Start()
     {
-        raycastHolder = gameObject.GetComponent<PhysicsRaycaster>();
+        raycastHolder = gameObject.GetComponent<GvrPointerPhysicsRaycaster>();
         player = transform.parent.gameObject;
     }
 
